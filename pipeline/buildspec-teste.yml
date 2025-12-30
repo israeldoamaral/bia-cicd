@@ -11,6 +11,8 @@ phases:
     commands:
       - echo Instalando as dependencias...
       - npm install --loglevel=error
+      - cd client
+      - npm install --legacy-peer-deps --loglevel=error
       - VITE_API_URL=http://localhost:3001 npm run build --force
       - echo Executando os testes unitarios...
       - npm test
