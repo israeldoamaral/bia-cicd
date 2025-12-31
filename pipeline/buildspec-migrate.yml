@@ -12,5 +12,5 @@ phases:
       - echo Instalando as dependencias para migrate...
       - npm install --loglevel=error
       - echo executando os comandos da migrate...
-      - npx sequelize db:create || echo "Banco já existe, continuando..."
+      - npx sequelize db:create || echo "Banco já existe, continue..."
       - npx sequelize db:migrate
