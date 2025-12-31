@@ -11,5 +11,6 @@ phases:
     commands:
       - echo Instalando as dependencias para migrate...
       - npm install --loglevel=error
+      - echo Configurando o banco de dados para migrate...
       - npx sequelize db:create
       - npx sequelize db:migrate
